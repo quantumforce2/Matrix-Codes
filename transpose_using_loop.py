@@ -1,8 +1,11 @@
-''' Transpose a matrix using zip'''
+''' Transpose a matrix using for loop'''
 def transpose(matrix):
     matrix_T = []
-    for each_set in zip(*matrix):
-        matrix_T.append([el for el in each_set])
+    for i in range(len(matrix)+1):
+        t_row = []
+        for row in matrix:
+            t_row.append(row[i])
+        matrix_T.append(t_row)
     return matrix_T
 
 if __name__== "__main__":
