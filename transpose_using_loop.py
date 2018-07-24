@@ -1,4 +1,4 @@
-''' Transpose a matrix using for loop'''
+''' Transpose a two dimension matrix using for loop'''
 def transpose(matrix):
     matrix_T = []
     for i in range(len(matrix)+1):

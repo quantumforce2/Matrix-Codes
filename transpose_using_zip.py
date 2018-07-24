@@ -1,4 +1,4 @@
-''' Transpose a matrix using zip'''
+''' Transpose a two dimension matrix using zip'''
 def transpose(matrix):
     matrix_T = []
     for each_set in zip(*matrix):
